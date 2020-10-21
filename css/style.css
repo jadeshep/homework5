@@ -54,18 +54,18 @@ footer{
 /*Keyframes for animation*/
 
 @-webkit-keyframes logo_wiggle{
-  /*Your code here.*/
-
+  from {width: 25px;}
+  to {width: 420px;}
 }
 
 @keyframes logo_wiggle{
-  /*Your code here.*/
-
+  from {width: 25px;}
+  to {width: 420px;}
 } 
 
 #logo{
-   /*Your code here.*/
- 
+  animation-duration: 15s;
+  animation-iteration-count: 1;
 }
 
 /* Cards! */
@@ -73,7 +73,10 @@ footer{
     min-height: 500px;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -83,7 +86,7 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-
+  flex-basis: 400px;
 }
 
 .card > header{
@@ -128,7 +131,10 @@ footer{
 /* Gallery! */
 .gallery{
   min-height: 600px;
-  /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
 }
 
 .gallery > img{
@@ -141,11 +147,19 @@ footer{
 header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-  /*Your  code here again.*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_links{
-  /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_item a{
@@ -164,7 +178,7 @@ header{
 
   /* Cards! */
   .card {
-    /*Your  code here again.*/
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -174,11 +188,13 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav_links{
-    /*Your code here again.*/  
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -191,7 +207,10 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
-  /*You will want four selectors*/  
+  /*You will want four selectors*/
+  body {
+    background-image: none;
+  }  
 }
 
 /*Your code here again.*/ 
