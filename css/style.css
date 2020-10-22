@@ -210,8 +210,22 @@ header{
   /*You will want four selectors*/
   body {
     background-image: none;
-  }  
+  }
+  .pricing {
+    align-items: flex-start;
+  }
+  #gallery {
+    display: none;
+  }
+  .gallery {
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: none;
+  }
+}
